@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import "./globals.css";
+import "../styles/globals.css";
+import TopBar from "@/components/TopBar/TopBar";
 
 export const metadata: Metadata = {
 	title: "Accessory Shop",
@@ -11,8 +12,11 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en">
-			<body>{children}</body>
+		<html lang="fa">
+			<body className="font-iranYekanMedium">
+				<TopBar />
+				{children}
+			</body>
 		</html>
 	);
 }

@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+@layer base {
+	@font-face {
+		font-family: "iranyekan medium";
+		src: url(../../public/fonts/iranyekanwebmediumfanum.ttf);
+	}
+	@font-face {
+		font-family: "iranyekan bold";
+		src: url(../../public/fonts/iranyekanwebboldfanum.ttf);
+	}
+	@font-face {
+		font-family: "iranyekan extra bold";
+		src: url(../../public/fonts/iranyekanwebextraboldfanum.ttf);
+	}
+	@font-face {
+		font-family: "iranyekan black";
+		src: url(../../public/fonts/iranyekanwebblackfanum.ttf);
+	}
+}
+
+@layer utilities {
+}

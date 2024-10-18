@@ -7,12 +7,20 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontFamily : {
+        'iranYekanMedium': 'iranyekan medium',
+        'iranYekanBold': 'iranyekan bold',
+        'iranYekanExBold': 'iranyekan extra bold',
+        'iranYekanBlack': 'iranyekan black',
+    },
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        'primary': '#c83a81'
       },
     },
+    container: {
+			center: true,
+		},
   },
   plugins: [],
 };
