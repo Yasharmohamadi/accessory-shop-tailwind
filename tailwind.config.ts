@@ -15,7 +15,8 @@ const config: Config = {
     },
     extend: {
       colors: {
-        'primary': '#c83a81'
+        'primary': '#c83a81',
+        'txtclr': '#000000b3',
       },
     },
     container: {
