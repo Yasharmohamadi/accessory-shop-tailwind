@@ -1,0 +1,39 @@
+.categories {
+	margin-bottom: 50rem;
+	padding: 15rem 0;
+	background: linear-gradient(0deg, var(--app-bg) 0%, var(--section-bg) 30%);
+}
+.categories-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 3rem;
+}
+
+.categorybox-wrapper {
+	position: relative;
+}
+.category-svg {
+	position: absolute;
+}
+
+#category-svg-1{
+	top: 4rem;
+	right: -1rem;
+}
+#category-svg-2{
+    top: -1rem;
+    right: 15rem;
+}
+#category-svg-3{
+	top: 8rem;
+    left: 0rem;
+}
+#category-svg-4{
+	top: 15rem;
+    right: 2rem;
+}
+#category-svg-5{
+	top: -3rem;
+    right: 10rem;
+}

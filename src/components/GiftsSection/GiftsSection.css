@@ -1,0 +1,38 @@
+.giftsections {
+	height: 0;
+}
+
+.giftsections-wrapper {
+	position: relative;
+}
+
+.swiper-slide {
+	position: relative;
+}
+
+
+.mySwiper {
+	position: absolute;
+	top: -20rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.swiper-pagination {
+    position: relative !important;
+    margin-top: 5rem !important;
+    right: 0;
+
+}
+
+.swiper-pagination-bullet {
+	border: 0.3rem solid #8f8f8f !important;
+	opacity: 1 !important;
+	background: none !important;
+	width: 1.5rem !important;
+	height: 1.5rem !important;
+}
+
+.swiper-pagination-bullet-active {
+	border: 0.3rem solid var(--primary) !important;
+}
