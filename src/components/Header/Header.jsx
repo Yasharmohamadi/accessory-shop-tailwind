@@ -2,9 +2,11 @@ import React from "react";
 
 export default function Header() {
 	return (
-		<div className="header">
-			<div className="container header-wrapper">
-				<div className="header_cloud-wrapper header_cloud-left">
+		<div className="header relative h-[60rem] -mt-28">
+			{/* header cloud wrapper */}
+			<div className="-z-10 blur-lg hidden lg:block">
+				{/* left cloud */}
+				<div className="absolute left-0 top-[30rem]">
 					<svg
 						width="299"
 						height="108"
@@ -116,8 +118,10 @@ export default function Header() {
 						/>
 					</svg>
 				</div>
-				<div className="header_cloud-right">
-					<div className="header_cloud-wrapper header_cloud-right-up">
+				{/* right clouds wrapper */}
+				<div>
+					{/* right cloud top */}
+					<div className="absolute right-0 top-[15rem]">
 						<svg
 							width="353"
 							height="89"
@@ -211,7 +215,8 @@ export default function Header() {
 							/>
 						</svg>
 					</div>
-					<div className="header_cloud-wrapper header_cloud-right-down">
+					{/* right cloud bottom */}
+					<div className="absolute right-[5rem] top-[35rem]">
 						<svg
 							width="257"
 							height="90"
