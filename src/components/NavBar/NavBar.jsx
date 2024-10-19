@@ -2,7 +2,7 @@ import React from "react";
 
 export default function NavBar() {
 	return (
-		<div className="container">
+		<div className="container z-10">
 			{/* navbar wrapper */}
 			<div className="flex flex-col items-center justify-between flex-wrap gap-6 p-4 lg:flex-row">
 				{/* navbar user-basket-search */}
@@ -108,8 +108,21 @@ export default function NavBar() {
 				{/* navbar list */}
 				<div className="order-3">
 					<ul className="flex gap-8 list-none">
-						<li className="cursor-pointer">
+						<li className="cursor-pointer flex items-center justify-center gap-2">
 							<a href="#">محصولات</a>
+							<svg
+								width="15"
+								height="9"
+								viewBox="0 0 15 9"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M14.2099 1.20998C14.1169 1.11625 14.0063 1.04186 13.8845 0.991091C13.7626 0.940323 13.6319 0.914185 13.4999 0.914185C13.3679 0.914185 13.2372 0.940323 13.1153 0.991091C12.9934 1.04186 12.8828 1.11625 12.7899 1.20998L8.20988 5.78997C8.11691 5.8837 8.00631 5.9581 7.88445 6.00886C7.7626 6.05963 7.63189 6.08577 7.49988 6.08577C7.36787 6.08577 7.23716 6.05963 7.1153 6.00886C6.99344 5.9581 6.88284 5.8837 6.78988 5.78997L2.20988 1.20998C2.11691 1.11625 2.00631 1.04186 1.88445 0.991091C1.76259 0.940323 1.63189 0.914185 1.49988 0.914185C1.36787 0.914185 1.23716 0.940323 1.1153 0.991091C0.993441 1.04186 0.88284 1.11625 0.789877 1.20998C0.603626 1.39734 0.499084 1.6508 0.499084 1.91498C0.499084 2.17917 0.603626 2.43262 0.789877 2.61998L5.37988 7.20997C5.94238 7.77177 6.70487 8.08733 7.49988 8.08733C8.29488 8.08733 9.05738 7.77177 9.61988 7.20997L14.2099 2.61998C14.3961 2.43262 14.5007 2.17917 14.5007 1.91498C14.5007 1.6508 14.3961 1.39734 14.2099 1.20998Z"
+									fill="black"
+									fill-opacity="0.7"
+								/>
+							</svg>
 						</li>
 						<li className="cursor-pointer">
 							<a href="#">درباره ما</a>
