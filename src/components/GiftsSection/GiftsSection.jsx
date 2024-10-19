@@ -16,7 +16,7 @@ import { Pagination } from "swiper/modules";
 
 export default function GiftsSection() {
 	return (
-			<div className="container relative p-12">
+			<div className="container relative p-12 h-0">
 				{/* Gift Boxes Slider */}
 				<Swiper
 					spaceBetween={300}

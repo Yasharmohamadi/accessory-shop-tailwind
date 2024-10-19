@@ -3,14 +3,13 @@ import Image from "next/image";
 
 export default function CategoryBox({ imgSrc, borderSrc }) {
 	return (
-		<div className="categorie-box col-12 col-md-3 col-lg-2">
+		<div className="flex justify-center items-center">
 			{/* this Image is the categorybox image */}
 			<Image
 				src={imgSrc}
-				width={240}
-				height={240}
+				width={260}
+				height={260}
 				alt="CAtegorie Image"
-				className="categorie-box-img"
 			/>
 
 			{/* this Image is the svg for categorybox border */}
@@ -19,7 +18,8 @@ export default function CategoryBox({ imgSrc, borderSrc }) {
 				width={240}
 				height={240}
 				alt="Ctegorie border"
-				className="categorie-box-svg"
+				className="absolute"
+
 			/>
 		</div>
 	);

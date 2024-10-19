@@ -30,8 +30,14 @@ body {
 		background-position: center;
 		background-size: cover;
 	}
+	.categories {
+		background: linear-gradient(0deg, #fff 0%, #fbeaf5 30%);
+	}
 	
 }
 
-@layer utilities {
+@layer components {
+	.categorybox-wrapper {
+		@apply relative
+	}
 }
