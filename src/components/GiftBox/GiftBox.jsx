@@ -2,22 +2,23 @@ import React from "react";
 import { Squircle } from "@squircle-js/react";
 export default function GiftBox() {
 	return (
-		<div className="giftbox">
+		<div className="relative flex items-center justify-center ">
+			{/* giftbox box */}
 			<Squircle
 				cornerRadius={60}
 				cornerSmoothing={1}
-				className="giftbox-content"
+				className="relative flex items-center justify-center flex-col gap-8 py-16 px-14 w-full h-full bg-white text-center"
 			>
-				<span className="giftbox-title">هدیه‌ای طراحی شده توسط شما !</span>
-				<span className="giftbox-text">
+				{/* giftbox title */}
+				<span className="text-2xl font-iranYekanBlack">هدیه‌ای طراحی شده توسط شما !</span>
+				{/* giftbox caption */}
+				<span className="font-iranYekanBold">
 					از انتخاب پاکت کادو و گل‌ها تا نوشتن متن روی کارت
 				</span>
-
 			</Squircle>
 			<svg
-				className="giftbox-arrow"
-				width="40"
-				height="40"
+				className="absolute -left-6 top-0 bottom-0 my-auto   cursor-pointer w-[3rem] h-[3rem] rounded-2xl border border-dashed border-primary z-10 backdrop-blur-lg"
+
 				viewBox="0 0 26 26"
 				fill="none"
 			>
@@ -41,7 +42,7 @@ export default function GiftBox() {
 						rx="169"
 						ry="6.5"
 						fill="#DDC3CE"
-						fill-opacity="0.46"
+						fillOpacity="0.46"
 					/>
 				</g>
 				<defs>

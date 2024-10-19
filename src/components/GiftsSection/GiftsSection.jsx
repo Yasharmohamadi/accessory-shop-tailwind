@@ -1,3 +1,5 @@
+
+"use client"
 import React from "react";
 import GiftBox from "../GiftBox/GiftBox";
 
@@ -14,8 +16,7 @@ import { Pagination } from "swiper/modules";
 
 export default function GiftsSection() {
 	return (
-		<div className="giftsections">
-			<div className="giftsections-wrapper container">
+			<div className="container relative p-12">
 				{/* Gift Boxes Slider */}
 				<Swiper
 					spaceBetween={300}
@@ -23,7 +24,7 @@ export default function GiftsSection() {
 						clickable: true,
 					}}
 					modules={[Pagination]}
-					className="mySwiper"
+					className="absolute -top-[20rem] !p-6"
 					loop={true}
 					slidesPerView={1}
 					breakpoints={{
@@ -34,17 +35,16 @@ export default function GiftsSection() {
 						},
 					}}
 				>
-					<SwiperSlide>
+					<SwiperSlide className="lg:!w-[15rem] xl:!w-[20rem]">
+						<GiftBox />
+					</SwiperSlide >
+					<SwiperSlide className="lg:!w-[15rem] xl:!w-[20rem]">
 						<GiftBox />
 					</SwiperSlide>
-					<SwiperSlide>
-						<GiftBox />
-					</SwiperSlide>
-					<SwiperSlide>
+					<SwiperSlide  className="lg:!w-[15rem] xl:!w-[20rem]">
 						<GiftBox />
 					</SwiperSlide>
 				</Swiper>
 			</div>
-		</div>
 	);
 }
