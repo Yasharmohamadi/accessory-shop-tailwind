@@ -1,7 +1,10 @@
 // Image imported because we can't use <img/> in next for add a image. 
 import Image from "next/image";
-
-export default function CategoryBox({ imgSrc, borderSrc }) {
+type CategoryBoxProps = {
+	imgSrc: string;
+	borderSrc: string;
+  };
+export default function CategoryBox({ imgSrc, borderSrc }: CategoryBoxProps) {
 	return (
 		<div className="flex justify-center items-center">
 			{/* this Image is the categorybox image */}
