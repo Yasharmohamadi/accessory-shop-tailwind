@@ -1,5 +1,4 @@
-import React from "react";
-
+import { Input } from "@nextui-org/input";
 export default function NavBar() {
 	return (
 		<div className="container z-10">
@@ -43,7 +42,7 @@ export default function NavBar() {
 					<div className="w-px h-8 bg-gray-200"></div>
 
 					{/* navbar search box*/}
-					<div className="flex">
+					<div className="flex items-center gap-2">
 						{/* navbar search icon*/}
 						<div className="cursor-pointer">
 							<svg className="w-6 h-6" viewBox="0 0 31 30" fill="none">
@@ -55,10 +54,11 @@ export default function NavBar() {
 						</div>
 
 						{/* navbar search input*/}
-						<input
+						{/* <input
 							className="placeholder-gray-400 outline-none mr-4"
 							placeholder="جستجو کنید"
-						/>
+						/> */}
+						<Input placeholder="جستجو کنید" radius="full" />
 					</div>
 				</div>
 
